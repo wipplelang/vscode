@@ -1,0 +1,41 @@
+{
+  "name": "wipple",
+  "displayName": "Wipple",
+  "description": "Wipple language support",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.54.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "wipple",
+        "aliases": [
+          "Wipple",
+          "wipple"
+        ],
+        "extensions": [
+          ".wpl"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "wipple",
+        "scopeName": "source.wipple",
+        "path": "./syntaxes/wipple.tmLanguage.json"
+      }
+    ],
+    "*** IGNORE FOR NOW *** iconThemes": [
+      {
+        "id": "wipple",
+        "label": "Wipple",
+        "path": "./fileicons/wipple-icon-theme.json"
+      }
+    ]
+  }
+}

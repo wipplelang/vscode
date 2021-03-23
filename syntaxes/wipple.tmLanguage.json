@@ -1,0 +1,51 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Wipple",
+  "patterns": [
+    {
+      "match": "--.*",
+      "name": "comment.line"
+    },
+    {
+      "match": "[`~!@#$%^&*\\-_=+\\\\|;:,<.>/?]+(?=[ \\t()\\[\\]{}']|$)",
+      "name": "keyword.operator"
+    },
+    {
+      "match": "[0-9]+(\\.[0-9]+)?(?=[ \\t()\\[\\]{}']|$)",
+      "name": "constant.numeric"
+    },
+    {
+      "match": "[^ \\t\\n()\\[\\]{}'\"]+",
+      "name": "variable.name"
+    },
+    {
+      "match": "\"[^\\n\"]*\"",
+      "name": "string.quoted.double"
+    },
+    {
+      "match": "\\(",
+      "name": "punctuation.definition.list.begin"
+    },
+    {
+      "match": "\\)",
+      "name": "punctuation.definition.list.end"
+    },
+    {
+      "match": "\\[",
+      "name": "punctuation.definition.brackets.begin"
+    },
+    {
+      "match": "\\]",
+      "name": "punctuation.definition.brackets.end"
+    },
+    {
+      "match": "{",
+      "name": "punctuation.definition.block.begin"
+    },
+    {
+      "match": "}",
+      "name": "punctuation.definition.block.end"
+    }
+  ],
+  "scopeName": "source.wipple"
+}

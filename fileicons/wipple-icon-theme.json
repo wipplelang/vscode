@@ -1,0 +1,13 @@
+{
+  "iconDefinitions": {
+    "wpl_file": {
+      "iconPath": "./wipple-icon.svg"
+    }
+  },
+  "fileExtensions": {
+    "wpl": "wpl_file"
+  },
+  "languageIds": {
+    "wipple": "wpl_file"
+  }
+}
